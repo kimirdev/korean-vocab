@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Input } from '../ui/input'
 
 import dict from "@/data/topik1.json"
@@ -12,7 +12,7 @@ const TypingTab = () => {
     const arrLength = data.length
 
     setCurrentWord(data[Math.floor(Math.random() * arrLength)])
-  }, [])
+  }, [data])
 
   const [value, setValue] = useState("")
 

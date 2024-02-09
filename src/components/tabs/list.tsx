@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 import dict from "@/data/topik1.json"
 import shuffle from '@/lib/arrayShuffle'
