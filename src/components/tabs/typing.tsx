@@ -29,9 +29,9 @@ const TypingTab = () => {
   }, [currentWord?.korean, data, value])
 
   return (
-    <div className='max-w-[428px] mx-auto'>
+    <div className='max-w-[428px] w-full mx-auto'>
       
-      <div className='group flex justify-between border-b hover:border-black hover:dark:border-white mb-5 hover:cursor-default'>
+      <div className='w-full group flex justify-between border-b hover:border-black hover:dark:border-white mb-5 hover:cursor-default'>
         <p className='group-hover:font-semibold break-keep mr-3'>{currentWord?.korean}</p>
         <p className='group-hover:font-semibold'>{currentWord?.english}</p>
       </div>
