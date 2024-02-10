@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react'
 import { Input } from '../ui/input'
 
-import dict from "@/data/topik1.json"
+// import dict from "@/data/topik1.json"
+import { useCategory } from '../category'
 
 const TypingTab = () => {
-  const [data] = useState(dict)
+  const {data} = useCategory()
 
   const [currentWord, setCurrentWord] = useState<{korean:string, english: string}>()
 
