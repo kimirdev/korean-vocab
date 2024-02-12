@@ -39,7 +39,7 @@ const TypingTab = () => {
         <p className='group-hover:font-semibold'>{currentWord?.english}</p>
       </div> */}
 
-      <Input name='word' autoComplete='off' autoFocus value={value} onChange={(e) => setValue(e.target.value)} className={` my-5 ${value.trim() === currentWord?.korean ? "border-green-400" : "border-red-400"}`} />
+      <Input name='word' autoComplete='off' autoFocus value={value} onChange={(e) => setValue(e.target.value)} className={` my-5 text-base ${value.trim() === currentWord?.korean ? "border-green-400" : "border-red-400"}`} />
 
       <span className='text-xs text-gray-600'>*Type the correct korean word and press <span className="font-bold">Space</span></span>
     </div>
