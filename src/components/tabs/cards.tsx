@@ -22,6 +22,7 @@ const CardsTab = () => {
   return (
     <div className='max-w-[428px] mx-auto h-[200px]'>
       <FlipCard frontSideText={currentWord?.korean ?? ""} backSideText={currentWord?.english ?? ""} isRotated={rotated} onClick={() => setRotated(v => !v)} />
+      <span className='text-xs text-gray-600'>*Click/Tap on the card to flip card.</span>
     </div>
   )
 }

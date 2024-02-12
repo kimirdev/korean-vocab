@@ -1,5 +1,6 @@
 import { CategorySelect } from "./components/category";
 import CardsTab from "./components/tabs/cards";
+import GuessTab from "./components/tabs/guess";
 import ListTab from "./components/tabs/list";
 import TypingTab from "./components/tabs/typing";
 import { ThemeToggler } from "./components/theme";
@@ -21,6 +22,7 @@ function App() {
           <TabsTrigger value="typing">Typing</TabsTrigger>
           <TabsTrigger value="list">List</TabsTrigger>
           <TabsTrigger value="cards">Cards</TabsTrigger>
+          <TabsTrigger value="guess">Guess</TabsTrigger>
         </TabsList>
         <TabsContent value="typing">
           <TypingTab />
@@ -30,6 +32,9 @@ function App() {
         </TabsContent>
         <TabsContent value="cards">
           <CardsTab />
+        </TabsContent>
+        <TabsContent value="guess">
+          <GuessTab />
         </TabsContent>
       </Tabs>
 
