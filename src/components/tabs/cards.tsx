@@ -18,6 +18,18 @@ const CardsTab = () => {
     }
   }, [data, rotated])
 
+  const handleKeyPress = (e: KeyboardEvent) => {
+    if (e.key === " ") {
+      setRotated(v => !v)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("keypress", handleKeyPress)
+
+    return () => window.removeEventListener("keypress", handleKeyPress)
+  }, [])
+
 
   return (
     <div className='max-w-[428px] mx-auto h-[200px]'>
