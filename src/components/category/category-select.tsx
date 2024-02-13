@@ -13,7 +13,8 @@ export function CategorySelect({ className }: { className?: string }) {
   const topikMap = {
     'topik1': "TOPIK I",
     'topik2': "TOPIK II",
-    'all': 'All'
+    'all': 'All',
+    'russian5000': "Russian 5000"
   }
 
   return (
@@ -32,6 +33,9 @@ export function CategorySelect({ className }: { className?: string }) {
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setCategory("all")}>
           {topikMap['all']}
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setCategory("russian5000")}>
+          {topikMap['russian5000']}
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

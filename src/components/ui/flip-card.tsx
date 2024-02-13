@@ -2,6 +2,12 @@ import { cn } from "@/lib/utils"
 // import { useState } from "react"
 
 const FlipCard = ({ frontSideText, backSideText, onClick, isRotated }: { frontSideText: string, backSideText: string, onClick: () => void, isRotated: boolean}) => {
+
+  // implement space press
+  // const handleKeyPress = () => {
+
+  // }
+
   return (
     <div className='max-w-[428px] mx-auto w-full h-[200px] perspective-1000 mb-5' onClick={onClick}>
       <div className={cn("hover:cursor-default relative transform-style-3d transition-transform transform shadow-2xl border-2 dark:border-gray-700 duration-700 w-full h-full bg-muted rounded", isRotated ? "rotate-y-180" : "rotate-y-0")}>

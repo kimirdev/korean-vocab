@@ -2,8 +2,9 @@ import { createContext, useContext, useMemo, useState } from "react"
 
 import topik1Data from "@/data/topik1.json"
 import topik2Data from "@/data/topik2.json"
+import russian5000 from "@/data/russian5000.json"
 
-type Category = "topik1" | "topik2" | "all"
+type Category = "topik1" | "topik2" | "all" | "russian5000"
 
 type CategoryProviderProps = {
   children: React.ReactNode
@@ -36,6 +37,7 @@ export function CategoryProvider({
   )
 
   const data = useMemo(() => {
+    console.log("Category changed")
     switch (category) {
       case "topik1":
         return [...topik1Data]
@@ -43,6 +45,9 @@ export function CategoryProvider({
         return [...topik2Data]
       case "all":
         return [...topik1Data, ...topik2Data]
+      case "russian5000": 
+        return[...russian5000]
+
     }
   }, [category])
 

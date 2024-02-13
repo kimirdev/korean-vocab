@@ -22,8 +22,8 @@ const ListTab = () => {
   return (
     <div className='w-full max-w-[428px] mx-auto space-y-4 hover:cursor-default'>
       <Button type='button' onClick={onRandomClick} className='ml-auto mr-0 block'>Randomize</Button>
-      {data?.map(elem => (
-        <Line leftText={elem.korean} rightText={elem.english} />
+      {data?.map((elem, idx) => (
+        <Line key={elem.korean !== '' ? elem.korean : idx} leftText={elem.korean} rightText={elem.english} />
       ))}
     </div>
   )

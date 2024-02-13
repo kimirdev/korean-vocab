@@ -17,20 +17,20 @@ function App() {
       </h1>
 
 
-      <Tabs defaultValue="typing" className="flex flex-col w-full">
+      <Tabs defaultValue="type" className="flex flex-col w-full">
         <TabsList className="mx-auto my-10">
-          <TabsTrigger value="typing">Typing</TabsTrigger>
+          <TabsTrigger value="type">Type</TabsTrigger>
           <TabsTrigger value="list">List</TabsTrigger>
-          <TabsTrigger value="cards">Cards</TabsTrigger>
+          <TabsTrigger value="card">Card</TabsTrigger>
           <TabsTrigger value="guess">Guess</TabsTrigger>
         </TabsList>
-        <TabsContent value="typing">
+        <TabsContent value="type">
           <TypingTab />
         </TabsContent>
         <TabsContent value="list">
           <ListTab />
         </TabsContent>
-        <TabsContent value="cards">
+        <TabsContent value="card">
           <CardsTab />
         </TabsContent>
         <TabsContent value="guess">
