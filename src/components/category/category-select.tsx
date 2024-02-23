@@ -11,11 +11,11 @@ export function CategorySelect({ className }: { className?: string }) {
   const { category, setCategory } = useCategory();
 
   const topikMap = {
-    'topik1': "TOPIK I",
-    'topik2': "TOPIK II",
-    'all': 'All',
-    'russian5000': "Russian 5000"
-  }
+    topik1: "TOPIK I",
+    topik2: "TOPIK II",
+    all: "TOPIK I+II",
+    russian5000: "Russian 5000",
+  };
 
   return (
     <DropdownMenu>
@@ -26,16 +26,16 @@ export function CategorySelect({ className }: { className?: string }) {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="start">
         <DropdownMenuItem onClick={() => setCategory("topik1")}>
-          {topikMap['topik1']}
+          {topikMap["topik1"]}
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setCategory("topik2")}>
-          {topikMap['topik2']}
+          {topikMap["topik2"]}
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setCategory("all")}>
-          {topikMap['all']}
+          {topikMap["all"]}
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setCategory("russian5000")}>
-          {topikMap['russian5000']}
+          {topikMap["russian5000"]}
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

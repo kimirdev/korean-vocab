@@ -16,7 +16,6 @@ function App() {
         Korean Vocab Practice
       </h1>
 
-
       <Tabs defaultValue="type" className="flex flex-col w-full">
         <TabsList className="mx-auto my-10">
           <TabsTrigger value="type">Type</TabsTrigger>
@@ -37,7 +36,6 @@ function App() {
           <GuessTab />
         </TabsContent>
       </Tabs>
-
     </section>
   );
 }
